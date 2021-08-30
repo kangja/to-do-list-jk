@@ -1,10 +1,14 @@
 import "./App.css";
 
 function App() {
+  const handleSubmit = (e) => {
+    e.preventDefault();
+  };
+
   return (
     <div className="big-container">
       <h1>To Do List</h1>
-      <form>
+      <form onSubmit={handleSubmit}>
         <label>
           <input
             className="input"
