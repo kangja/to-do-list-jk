@@ -15,10 +15,16 @@ function TodoList() {
     setTodos(newTodos);
   };
 
+  const removeTodo = (id) => {
+    const removeArray = [...todos].filter((todo) => todo.id !== id);
+
+    setTodos(removeArray);
+  };
+
   return (
     <div>
       <TodoForm onSubmit={addTodo} />
-      <Todo todos={todos} />
+      <Todo todos={todos} removeTodo={removeTodo} />
     </div>
   );
 }
