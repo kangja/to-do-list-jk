@@ -10,9 +10,23 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 4px auto;
   color: black;
-  padding: 16px;
+  margin-top: 2px;
+  padding: 10px;
   border-radius: 5px;
   width: 90%;
+}
+
+.icons {
+  display: flex;
+  padding-left: 40px;
+}
+
+.edit-form {
+  padding-top: 1opx;
+}
+
+.complete {
+  text-decoration: line-through;
+  opacity: 0.4;
 }
